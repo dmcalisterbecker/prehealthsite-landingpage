@@ -1,0 +1,80 @@
+<head>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="https://res.cloudinary.com/deflyzun6/image/upload/v1573537769/ph_nng7tu.png"/>
+
+
+      <title>Pre-Health Sign in</title>
+</head>
+
+<div id="app">
+  <img src="https://res.cloudinary.com/deflyzun6/image/upload/v1573537769/ph_nng7tu.png" style='height: auto; width: 25%; object-fit: contain'/>
+
+ <section id="event-details-container">
+      <h1>Pre-Health Society</h1>
+
+    
+      <button id="signIn">Sign in</button>
+ 
+ </section>
+
+  <hr>
+
+  <section id="firebaseui-auth-container"></section>
+
+  <section id="description-container">
+    
+  </section>
+
+   <section id="guestbook-container">
+   <h2>Confirm sign up</h2>
+
+   <form id="leave-message">
+     <label>Student ID: </label>
+     <input type="text" id="studentid">
+     <button type="submit" onclick="myFunction()">
+       <i class="material-icons">send</i>
+       <span>Send</span>
+       <script>
+          function myFunction() {
+            confirm("Success");
+          }
+        </script>
+     </button>
+    
+
+
+   </form>
+   
+   <section id="guestbook"></section>
+
+ </section>
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBllOf8p_78Ls6qipBIAzDCLfkLgd3WrBs",
+    authDomain: "pre-health-project-258121.firebaseapp.com",
+    databaseURL: "https://pre-health-project-258121.firebaseio.com",
+    projectId: "pre-health-project-258121",
+    storageBucket: "pre-health-project-258121.appspot.com",
+    messagingSenderId: "382537979778",
+    appId: "1:382537979778:web:f1b7a5368aa67bbc88619b",
+    measurementId: "G-S7GCBS69KC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</div>
+
